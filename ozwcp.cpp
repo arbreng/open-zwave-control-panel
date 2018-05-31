@@ -792,7 +792,7 @@ int32 main(int32 argc, char* argv[])
 	for (i = 0; i < MAX_NODES; i++)
 		nodes[i] = NULL;
 
-	Options::Create("./config/", "", "--SaveConfiguration=true --DumpTriggerLevel=0");
+	Options::Create("config/", "config/", "--SaveConfiguration=true --DumpTriggerLevel=0");
 	Options::Get()->Lock();
 
 	Manager::Create();
